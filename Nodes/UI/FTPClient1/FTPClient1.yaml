@@ -1,0 +1,3170 @@
+Name: FTPClient1
+Type: FolderType
+Children:
+- Name: FtpClientType
+  Id: g=7da655cb2c595fd50978be0345fd431b
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1000.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 600.0
+  - Name: FtpClientRectangle
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ffffff00"
+    - Name: FtpClientLayout
+      Type: ColumnLayout
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: ConnectionBar
+        Type: Panel
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 300.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 0
+        - Name: ParametersLayout
+          Type: RowLayout
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 50.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 50.0
+          - Name: Host
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"it-IT","Text":"Host"}
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 2
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 10.0
+          - Name: HostTextBox
+            Type: TextBox
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../FtpServerIPAddress"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 110.0
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: Username
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"NamespaceIndex":7,"TextId":"Username"}
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 2
+            - Name: BottomMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 20.0
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 10.0
+          - Name: UsernameTextBox
+            Type: TextBox
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../Username"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 2
+            - Name: BottomMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 110.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: Password
+            Type: Label
+            Children:
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 2
+            - Name: BottomMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 20.0
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"Password"}
+          - Name: PasswordTextBox
+            Type: TextBox
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../Password"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 2
+            - Name: BottomMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 110.0
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 10.0
+            - Name: ContentType
+              Type: BaseVariableType
+              DataType: InputTypeEnum
+              ModellingRule: Optional
+              Value: 1
+          - Name: Port
+            Type: Label
+            Children:
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 2
+            - Name: BottomMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 20.0
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 10.0
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"NamespaceIndex":7,"TextId":"Port"}
+          - Name: PortTextBox
+            Type: TextBox
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: StringFormatter1
+                Type: StringFormatter
+                Children:
+                - Name: Format
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"","Text":"{0:d}"}
+                - Name: Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../../FtpServerPort"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                - Name: Mode
+                  Type: PropertyType
+                  DataType: DynamicLinkMode
+                  ReferenceType: HasComponent
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 2
+            - Name: BottomMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 110.0
+        - Name: ButtonsLayout
+          Type: RowLayout
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 50.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 50.0
+          - Name: ConnectDisconnect
+            Type: Button
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: KeyValueConverter1
+                Type: ValueMapConverter
+                Children:
+                - Name: Source
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../Filesystems/FtpFilesystemBrowser/FtpFilesystemBrowserLogic/FtpClientIsRunning"
+                - Name: Pairs
+                  Type: BaseObjectType
+                  ModellingRule: None
+                  Children:
+                  - Name: Pair
+                    Type: ValueMapPair
+                    ModellingRule: None
+                    Children:
+                    - Name: Key
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ModellingRule: None
+                      Value: false
+                    - Name: Value
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      ModellingRule: None
+                      Value: {"NamespaceIndex":7,"TextId":"Connect"}
+                  - Name: Pair1
+                    Type: ValueMapPair
+                    ModellingRule: None
+                    Children:
+                    - Name: Key
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ModellingRule: None
+                      Value: true
+                    - Name: Value
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      ModellingRule: None
+                      Value: {"NamespaceIndex":7,"TextId":"Disconnect"}
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 2
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 1
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 120.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: MouseClickEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":16,"Namespace":3}
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"Id":58}
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../Filesystems/FtpFilesystemBrowser/FtpFilesystemBrowserLogic@NodeId"
+                      Children:
+                      - Name: Mode
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
+                  - Name: Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ConnectDisconnect"
+              - Name: EventArguments
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                  Value: ""
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                  Value: ""
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                  Value: "1601-01-01T00:00:00.0000000"
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                  Value: "1601-01-01T00:00:00.0000000"
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                  Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
+                  Value: 0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: ContentHorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 0.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: Line
+          Type: Rectangle
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 50.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 1
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 1.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 1.0
+          - Name: FillColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#000000"
+      - Name: Filesystems
+        Type: RowLayout
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 520.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: LocalFilesystemBrowser
+          Type: ColumnLayout
+          WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+          Children:
+          - Name: LocalActionBar
+            Type: Panel
+            Children:
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 300.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 40.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: LocalFilesystem
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"NamespaceIndex":7,"TextId":"LocalFilesystem"}
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+            - Name: SendButton
+              Type: Button
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"NamespaceIndex":7,"TextId":"Send"}
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 120.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 30.0
+              - Name: ImagePath
+                Type: BaseDataVariableType
+                DataType: ResourceUri
+                ModellingRule: Optional
+                Value: "ns=7;%PROJECTDIR%/FtpFilesystemBrowser/ForwardDark.svg"
+              - Name: ImagePosition
+                Type: BaseDataVariableType
+                DataType: Position
+                ModellingRule: Optional
+                Value: 5
+              - Name: ImageWidth
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+              - Name: Appearance
+                Type: BaseVariableType
+                DataType: String
+                ModellingRule: Optional
+                Value: ""
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: RightMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
+              - Name: BottomMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
+              - Name: MouseClickEventHandler1
+                Type: EventHandler
+                Children:
+                - Name: ListenEventType
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"Id":16,"Namespace":3}
+                - Name: MethodsToCall
+                  Type: BaseObjectType
+                  Children:
+                  - Name: MethodContainer1
+                    Type: BaseObjectType
+                    Children:
+                    - Name: ns=2;ObjectPointer
+                      Type: NodePointer
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                      Children:
+                      - Name: Kind
+                        Type: PropertyType
+                        DataType: NodeId
+                        Value: {"Id":58}
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../../../FtpFilesystemBrowser/FtpFilesystemBrowserLogic@NodeId"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: ns=2;Method
+                      Type: BaseDataVariableType
+                      DataType: String
+                      Value: "UploadItemValidation"
+                    - Name: InputArguments
+                      Type: BaseObjectType
+                      Children:
+                      - Name: localItemPath
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: ""
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../../../FullPath"
+                          Children:
+                          - Name: Mode
+                            Type: BaseVariableType
+                            DataType: DynamicLinkMode
+                            ModellingRule: Optional
+                            Value: 2
+                      - Name: remoteFolderPath
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: ""
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../../../../FtpFilesystemBrowser/FolderPath"
+                          Children:
+                          - Name: Mode
+                            Type: BaseVariableType
+                            DataType: DynamicLinkMode
+                            ModellingRule: Optional
+                            Value: 2
+                - Name: EventArguments
+                  Type: MouseClickEvent
+                  Children:
+                  - Name: EventId
+                    Type: PropertyType
+                    DataType: ByteString
+                    Value: ""
+                  - Name: EventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: SourceNode
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: SourceName
+                    Type: PropertyType
+                    DataType: String
+                    Value: ""
+                  - Name: Time
+                    Type: PropertyType
+                    DataType: UtcTime
+                    Value: "1601-01-01T00:00:00.0000000"
+                  - Name: ReceiveTime
+                    Type: PropertyType
+                    DataType: UtcTime
+                    Value: "1601-01-01T00:00:00.0000000"
+                  - Name: Message
+                    Type: PropertyType
+                    DataType: LocalizedText
+                    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                  - Name: Severity
+                    Type: PropertyType
+                    DataType: UInt16
+                    Value: 0
+          - Name: FilesystemBrowserLogic
+            Type: NetLogic
+            Children:
+            - Name: FilesList
+              Type: BaseObjectType
+            - Name: Path
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: ""
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../FolderPath"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  Value: 2
+          - Name: FolderBar
+            Type: RowLayout
+            Children:
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 50.0
+            - Name: Locations
+              Type: ComboBox
+              Children:
+              - Class: Reference
+                Target: ns=3;i=480
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              - Name: Model
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: ItemKind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                - Name: CollegamentoDinamico
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../Locations@NodeId"
+              - Name: SelectedValue
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+              - Name: SelectedItem
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+              - Name: Item
+                Type: Alias
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 0
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 160.0
+              - Name: DisplayValuePath
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: CollegamentoDinamico
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}@DisplayName"
+              - Name: SelectedValuePath
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                Children:
+                - Name: CollegamentoDinamico
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}@Value"
+              - Name: UISelectedItem
+                Type: BaseDataVariableType
+                DataType: NodeId
+                AccessLevel: Read
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+              - Name: UISelectedValue
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                AccessLevel: Read
+            - Name: RelativePath
+              Type: TextBox
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 110.0
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 3
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 5.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: FolderBarLogic
+              Type: NetLogic
+              Children:
+              - Name: Path
+                Type: BaseDataVariableType
+                DataType: ResourceUri
+                Value: "0"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../FolderPath"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+          - Name: DataGrid
+            Type: DataGrid
+            Children:
+            - Class: Reference
+              Target: ns=3;i=504
+            - Name: Model
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: ItemKind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":2,"Id":"e6468705b0e338094ea431f36d411d7f","Namespace":7}
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../FilesystemBrowserLogic/FilesList@NodeId"
+            - Name: Query
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+            - Name: Columns
+              Type: BaseObjectType
+              Children:
+              - Name: DataGridColumn1
+                Type: DataGridColumn
+                Children:
+                - Name: Title
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                - Name: Width
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  Value: 40.0
+                - Name: HeaderAlignment
+                  Type: BaseDataVariableType
+                  DataType: TextHorizontalAlignment
+                  Value: 0
+                - Name: ContentAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  Value: 2
+                - Name: OrderBy
+                  Type: BaseDataVariableType
+                  DataType: NodePath
+                  Value: ""
+                - Name: DataItemTemplate
+                  Type: DataGridImageItemTemplate
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: ""
+                    Children:
+                    - Name: KeyValueConverter1
+                      Type: ValueMapConverter
+                      Children:
+                      - Name: Source
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "{Item}/IsDirectory"
+                          Children:
+                          - Name: Mode
+                            Type: BaseVariableType
+                            DataType: DynamicLinkMode
+                            ModellingRule: Optional
+                            Value: 2
+                      - Name: Pairs
+                        Type: BaseObjectType
+                        Children:
+                        - Name: Pair
+                          Type: ValueMapPair
+                          Children:
+                          - Name: Key
+                            Type: BaseDataVariableType
+                            DataType: Boolean
+                            Value: false
+                          - Name: Value
+                            Type: BaseDataVariableType
+                            DataType: ResourceUri
+                            Value: "ns=7;%PROJECTDIR%/FilesystemBrowser/FileDark.png"
+                        - Name: Pair1
+                          Type: ValueMapPair
+                          Children:
+                          - Name: Key
+                            Type: BaseDataVariableType
+                            DataType: Boolean
+                            Value: true
+                          - Name: Value
+                            Type: BaseDataVariableType
+                            DataType: ResourceUri
+                            Value: "ns=7;%PROJECTDIR%/FilesystemBrowser/Folder_normal.svg"
+                  - Name: Width
+                    Type: BaseDataVariableType
+                    DataType: Size
+                    Value: 16.0
+                  - Name: Height
+                    Type: BaseDataVariableType
+                    DataType: Size
+                    Value: 16.0
+              - Name: DataGridColumn2
+                Type: DataGridColumn
+                Children:
+                - Name: Title
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"NamespaceIndex":7,"TextId":"Filename"}
+                - Name: Width
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  Value: -1.0
+                - Name: HeaderAlignment
+                  Type: BaseDataVariableType
+                  DataType: TextHorizontalAlignment
+                  Value: 0
+                - Name: ContentAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  Value: 0
+                - Name: OrderBy
+                  Type: BaseDataVariableType
+                  DataType: NodePath
+                  Value: ""
+                - Name: DataItemTemplate
+                  Type: DataGridLabelItemTemplate
+                  Children:
+                  - Name: Text
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{Item}/FileName"
+              - Name: DataGridColumn3
+                Type: DataGridColumn
+                Children:
+                - Name: Title
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"NamespaceIndex":7,"TextId":"Size"}
+                - Name: Width
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  Value: 100.0
+                - Name: HeaderAlignment
+                  Type: BaseDataVariableType
+                  DataType: TextHorizontalAlignment
+                  Value: 1
+                - Name: ContentAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  Value: 1
+                - Name: OrderBy
+                  Type: BaseDataVariableType
+                  DataType: NodePath
+                  Value: ""
+                - Name: DataItemTemplate
+                  Type: DataGridLabelItemTemplate
+                  Children:
+                  - Name: Text
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    Children:
+                    - Name: ConditionalConverter1
+                      Type: ConditionalConverter
+                      Children:
+                      - Name: Condition
+                        Type: BaseDataVariableType
+                        DataType: Boolean
+                        ReferenceType: HasSource
+                        Value: false
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "{Item}/IsDirectory"
+                      - Name: TrueValue
+                        Type: BaseDataVariableType
+                        DataType: LocalizedText
+                        ReferenceType: HasParameter
+                        ModellingRule: Optional
+                        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                      - Name: FalseValue
+                        Type: BaseDataVariableType
+                        DataType: LocalizedText
+                        ReferenceType: HasParameter
+                        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                        Children:
+                        - Name: StringFormatter1
+                          Type: StringFormatter
+                          Children:
+                          - Name: Format
+                            Type: BaseDataVariableType
+                            DataType: LocalizedText
+                            ReferenceType: HasParameter
+                            ModellingRule: Optional
+                            Value: {"LocaleId":"en-US","Text":"{0:n} KB"}
+                          - Name: ns=2;Source0
+                            Type: BaseDataVariableType
+                            DataType: BaseDataType
+                            ReferenceType: HasSource
+                            Children:
+                            - Name: DynamicLink
+                              Type: DynamicLink
+                              DataType: NodePath
+                              Value: "{Item}/Size"
+            - Name: SelectedItem
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":2,"Id":"e6468705b0e338094ea431f36d411d7f","Namespace":7}
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 300.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 260.0
+            - Name: Item
+              Type: Alias
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":2,"Id":"e6468705b0e338094ea431f36d411d7f","Namespace":7}
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: BottomMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: FilesystemBrowserDatagridLogic
+              Type: NetLogic
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: UISelectedItem
+              Type: BaseDataVariableType
+              DataType: NodeId
+              AccessLevel: Read
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+            - Name: AllowDeselection
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ModellingRule: Optional
+              Value: false
+          - Name: FolderPath
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "%USB1%"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../StartLocalFilesystemPath"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: FullPath
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: ""
+          - Name: ExtensionFilter
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "*.*"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../ExtensionFilter"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 480.0
+          - Name: Locations
+            Type: BaseObjectType
+            Children:
+            - Name: APPLICATION_DIR
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              DisplayName: {"NamespaceIndex":7,"TextId":"ApplicationFolder"}
+              Value: "%APPLICATIONDIR%\\"
+            - Name: PROJECT_DIR
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              DisplayName: {"NamespaceIndex":7,"TextId":"ProjectFolder"}
+              Value: "%PROJECTDIR%\\"
+          - Name: AccessFullFilesystem
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../AccessLocalFullFilesystem"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ShowHiddenFiles
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../ShowHiddenFiles"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: AccessNetworkDrives
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../AccessLocalNetworkDrives"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: RightMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 5.0
+        - Name: FtpFilesystemBrowser
+          Type: ColumnLayout
+          WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+          Children:
+          - Name: RemoteActionBar
+            Type: Panel
+            Children:
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 300.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 40.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: RemoteFilesystem
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"NamespaceIndex":7,"TextId":"RemoteFilesystem"}
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+            - Name: ReceiveButton
+              Type: Button
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"NamespaceIndex":7,"TextId":"Receive"}
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 120.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 30.0
+              - Name: ImagePath
+                Type: BaseDataVariableType
+                DataType: ResourceUri
+                ModellingRule: Optional
+                Value: "ns=7;%PROJECTDIR%/FtpFilesystemBrowser/BackDark.svg"
+              - Name: ImagePosition
+                Type: BaseDataVariableType
+                DataType: Position
+                ModellingRule: Optional
+                Value: 3
+              - Name: ImageWidth
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+              - Name: Appearance
+                Type: BaseVariableType
+                DataType: String
+                ModellingRule: Optional
+                Value: ""
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 0
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: MouseClickEventHandler1
+                Type: EventHandler
+                Children:
+                - Name: ListenEventType
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"Id":16,"Namespace":3}
+                - Name: MethodsToCall
+                  Type: BaseObjectType
+                  Children:
+                  - Name: MethodContainer1
+                    Type: BaseObjectType
+                    Children:
+                    - Name: ns=2;ObjectPointer
+                      Type: NodePointer
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                      Children:
+                      - Name: Kind
+                        Type: PropertyType
+                        DataType: NodeId
+                        Value: {"Id":58}
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../../FtpFilesystemBrowserLogic@NodeId"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: ns=2;Method
+                      Type: BaseDataVariableType
+                      DataType: String
+                      Value: "DownloadItemValidation"
+                    - Name: InputArguments
+                      Type: BaseObjectType
+                      Children:
+                      - Name: localFolderPath
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: ""
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../../../../LocalFilesystemBrowser/FolderPath"
+                          Children:
+                          - Name: Mode
+                            Type: BaseVariableType
+                            DataType: DynamicLinkMode
+                            ModellingRule: Optional
+                            Value: 2
+                      - Name: remoteItemPath
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: ""
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../../../FullPath"
+                          Children:
+                          - Name: Mode
+                            Type: BaseVariableType
+                            DataType: DynamicLinkMode
+                            ModellingRule: Optional
+                            Value: 2
+                - Name: EventArguments
+                  Type: MouseClickEvent
+                  Children:
+                  - Name: EventId
+                    Type: PropertyType
+                    DataType: ByteString
+                    Value: ""
+                  - Name: EventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: SourceNode
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: SourceName
+                    Type: PropertyType
+                    DataType: String
+                    Value: ""
+                  - Name: Time
+                    Type: PropertyType
+                    DataType: UtcTime
+                    Value: "1601-01-01T00:00:00.0000000"
+                  - Name: ReceiveTime
+                    Type: PropertyType
+                    DataType: UtcTime
+                    Value: "1601-01-01T00:00:00.0000000"
+                  - Name: Message
+                    Type: PropertyType
+                    DataType: LocalizedText
+                    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                  - Name: Severity
+                    Type: PropertyType
+                    DataType: UInt16
+                    Value: 0
+          - Name: FtpFilesystemBrowserLogic
+            Type: NetLogic
+            Children:
+            - Class: Method
+              Name: ConnectFtpClient
+              Id: g=36aa20ef0bc1ca542d719bb45e1dfbe1
+            - Class: Method
+              Name: DisconnectFtpClient
+              Id: g=daf88949169a69f6cdbd42918708a9d0
+            - Name: FtpFilesList
+              Type: BaseObjectType
+            - Name: Path
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: ""
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../FolderPath"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  Value: 2
+            - Name: LocalFileSystemNode
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../LocalFilesystemBrowser/FilesystemBrowserLogic/FilesList@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: FtpClientOperationInProgress
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: FtpClientIsRunning
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: FtpClientWidget
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../..@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ETA
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+            - Name: OperationDialog
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":2,"Id":"a7994682f82a28c67dcff20e111e8a18","Namespace":7}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":2,"Id":"a7994682f82a28c67dcff20e111e8a18","Namespace":7}
+              - Name: NodeClass
+                Type: PropertyType
+                DataType: NodePointerNodeClass
+                ModellingRule: Optional
+                Value: 1
+            - Class: Method
+              Name: ConnectDisconnect
+              Id: g=c7541a6d0071816c02efc9e15c0b4a9e
+            - Class: Method
+              Name: DownloadItem
+              Id: g=d16b5bf1ba58eb96b731018ad8e2cf14
+              Children:
+              - Name: ns=0;InputArguments
+                Type: BaseVariableType
+                DataType: Argument
+                ReferenceType: HasProperty
+                ValueRank: OneDimension
+                ArrayDimensions: [0]
+                Value: [{"TypeId":{"Id":296},"Body":{"Name":"localFolderPath","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"remoteItemPath","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"overwriteItemIfExists","DataType":{"Id":1},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+            - Class: Method
+              Name: UploadItem
+              Id: g=4a88988c6c34c918a9fc21988253fff0
+              Children:
+              - Name: ns=0;InputArguments
+                Type: BaseVariableType
+                DataType: Argument
+                ReferenceType: HasProperty
+                ValueRank: OneDimension
+                ArrayDimensions: [0]
+                Value: [{"TypeId":{"Id":296},"Body":{"Name":"localItemPath","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"remoteFolderPath","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"overwriteItemIfExists","DataType":{"Id":1},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+            - Class: Method
+              Name: UploadItemValidation
+              Id: g=0c005aeab2d48e023a73472a970d0e0d
+              Children:
+              - Name: ns=0;InputArguments
+                Type: BaseVariableType
+                DataType: Argument
+                ReferenceType: HasProperty
+                ValueRank: OneDimension
+                ArrayDimensions: [0]
+                Value: [{"TypeId":{"Id":296},"Body":{"Name":"localItemPath","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"remoteFolderPath","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+            - Class: Method
+              Name: DownloadItemValidation
+              Id: g=c75806048dcaf2b52f6345743b4004aa
+              Children:
+              - Name: ns=0;InputArguments
+                Type: BaseVariableType
+                DataType: Argument
+                ReferenceType: HasProperty
+                ValueRank: OneDimension
+                ArrayDimensions: [0]
+                Value: [{"TypeId":{"Id":296},"Body":{"Name":"localFolderPath","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"remoteItemPath","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+          - Name: FtpPathBar
+            Type: RowLayout
+            Children:
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 50.0
+            - Name: FtpPath
+              Type: TextBox
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../FolderPath"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 110.0
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 3
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
+              - Name: Enabled
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: true
+                Children:
+                - Name: ExpressionEvaluator1
+                  Type: ExpressionEvaluator
+                  Children:
+                  - Name: Expression
+                    Type: BaseDataVariableType
+                    DataType: String
+                    ReferenceType: HasParameter
+                    ModellingRule: Optional
+                    Value: "!{0}"
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../FtpFilesystemBrowserLogic/FtpClientOperationInProgress"
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+          - Name: FtpFilesDataGrid
+            Type: DataGrid
+            Children:
+            - Class: Reference
+              Target: ns=3;i=504
+            - Name: Model
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: ItemKind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":2,"Id":"1a35511ddd43b7d2cc9adbba4080ce46","Namespace":7}
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../FtpFilesystemBrowserLogic/FtpFilesList@NodeId"
+            - Name: Query
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+            - Name: Columns
+              Type: BaseObjectType
+              Children:
+              - Name: DataGridColumn1
+                Type: DataGridColumn
+                Children:
+                - Name: Title
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                - Name: Width
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  Value: 40.0
+                - Name: HeaderAlignment
+                  Type: BaseDataVariableType
+                  DataType: TextHorizontalAlignment
+                  Value: 0
+                - Name: ContentAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  Value: 2
+                - Name: OrderBy
+                  Type: BaseDataVariableType
+                  DataType: NodePath
+                  Value: ""
+                - Name: DataItemTemplate
+                  Type: DataGridImageItemTemplate
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: ""
+                    Children:
+                    - Name: KeyValueConverter1
+                      Type: ValueMapConverter
+                      Children:
+                      - Name: Source
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "{Item}/IsDirectory"
+                          Children:
+                          - Name: Mode
+                            Type: BaseVariableType
+                            DataType: DynamicLinkMode
+                            ModellingRule: Optional
+                            Value: 2
+                      - Name: Pairs
+                        Type: BaseObjectType
+                        Children:
+                        - Name: Pair
+                          Type: ValueMapPair
+                          Children:
+                          - Name: Key
+                            Type: BaseDataVariableType
+                            DataType: Boolean
+                            Value: false
+                          - Name: Value
+                            Type: BaseDataVariableType
+                            DataType: ResourceUri
+                            Value: "ns=7;%PROJECTDIR%/FilesystemBrowser/FileDark.png"
+                        - Name: Pair1
+                          Type: ValueMapPair
+                          Children:
+                          - Name: Key
+                            Type: BaseDataVariableType
+                            DataType: Boolean
+                            Value: true
+                          - Name: Value
+                            Type: BaseDataVariableType
+                            DataType: ResourceUri
+                            Value: "ns=7;%PROJECTDIR%/FilesystemBrowser/Folder_normal.svg"
+                  - Name: Width
+                    Type: BaseDataVariableType
+                    DataType: Size
+                    Value: 16.0
+                  - Name: Height
+                    Type: BaseDataVariableType
+                    DataType: Size
+                    Value: 16.0
+              - Name: DataGridColumn2
+                Type: DataGridColumn
+                Children:
+                - Name: Title
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"NamespaceIndex":7,"TextId":"Filename"}
+                - Name: Width
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  Value: -1.0
+                - Name: HeaderAlignment
+                  Type: BaseDataVariableType
+                  DataType: TextHorizontalAlignment
+                  Value: 0
+                - Name: ContentAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  Value: 0
+                - Name: OrderBy
+                  Type: BaseDataVariableType
+                  DataType: NodePath
+                  Value: ""
+                - Name: DataItemTemplate
+                  Type: DataGridLabelItemTemplate
+                  Children:
+                  - Name: Text
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{Item}/FileName"
+              - Name: DataGridColumn3
+                Type: DataGridColumn
+                Children:
+                - Name: Title
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"NamespaceIndex":7,"TextId":"Size"}
+                - Name: Width
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  Value: 100.0
+                - Name: HeaderAlignment
+                  Type: BaseDataVariableType
+                  DataType: TextHorizontalAlignment
+                  Value: 1
+                - Name: ContentAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  Value: 1
+                - Name: OrderBy
+                  Type: BaseDataVariableType
+                  DataType: NodePath
+                  Value: ""
+                - Name: DataItemTemplate
+                  Type: DataGridLabelItemTemplate
+                  Children:
+                  - Name: Text
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    Children:
+                    - Name: ConditionalConverter1
+                      Type: ConditionalConverter
+                      Children:
+                      - Name: Condition
+                        Type: BaseDataVariableType
+                        DataType: Boolean
+                        ReferenceType: HasSource
+                        Value: false
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "{Item}/IsDirectory"
+                      - Name: TrueValue
+                        Type: BaseDataVariableType
+                        DataType: LocalizedText
+                        ReferenceType: HasParameter
+                        ModellingRule: Optional
+                        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                      - Name: FalseValue
+                        Type: BaseDataVariableType
+                        DataType: LocalizedText
+                        ReferenceType: HasParameter
+                        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                        Children:
+                        - Name: StringFormatter1
+                          Type: StringFormatter
+                          Children:
+                          - Name: Format
+                            Type: BaseDataVariableType
+                            DataType: LocalizedText
+                            ReferenceType: HasParameter
+                            ModellingRule: Optional
+                            Value: {"LocaleId":"en-US","Text":"{0:n} KB"}
+                          - Name: ns=2;Source0
+                            Type: BaseDataVariableType
+                            DataType: BaseDataType
+                            ReferenceType: HasSource
+                            Children:
+                            - Name: DynamicLink
+                              Type: DynamicLink
+                              DataType: NodePath
+                              Value: "{Item}/Size"
+            - Name: SelectedItem
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":2,"Id":"1a35511ddd43b7d2cc9adbba4080ce46","Namespace":7}
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 300.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 260.0
+            - Name: Item
+              Type: Alias
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":2,"Id":"1a35511ddd43b7d2cc9adbba4080ce46","Namespace":7}
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: BottomMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: UISelectedItem
+              Type: BaseDataVariableType
+              DataType: NodeId
+              AccessLevel: Read
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: FolderPath
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "/"
+          - Name: FullPath
+            Type: BaseDataVariableType
+            DataType: String
+            Value: ""
+          - Name: ExtensionFilter
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "*.txt"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../ExtensionFilter"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 510.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 450.0
+          - Name: ShowHiddenFiles
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../ShowHiddenFiles"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 5.0
+          - Name: DownloadDialogContext
+            Type: OperationDialogContextType
+            Children:
+            - Name: Confirm
+              Type: MethodInvocation
+              Children:
+              - Class: Reference
+                Target: ns=2;i=98
+              - Name: ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"Id":58}
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../FtpFilesystemBrowserLogic@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "DownloadItem"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: localFolderPath
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../LocalFilesystemBrowser/FolderPath"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                - Name: remoteItemPath
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../FullPath"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                - Name: overwriteItemIfExists
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+            - Name: Cancel
+              Type: MethodInvocation
+              Children:
+              - Class: Reference
+                Target: ns=2;i=98
+              - Name: ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"Id":58}
+              - Name: Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: ""
+            - Name: Message
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: StringFormatter1
+                Type: StringFormatter
+                Children:
+                - Name: Format
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"it-IT","Text":"{0} esiste già sul file system locale. {1}"}
+                - Name: ns=2;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: CollegamentoDinamico
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../FtpFilesDataGrid/SelectedItem/FileName"
+                - Name: ns=2;Source1
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: ConvertitoreChiaveValore1
+                    Type: ValueMapConverter
+                    Children:
+                    - Name: Source
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: CollegamentoDinamico
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../../FtpFilesDataGrid/SelectedItem/IsDirectory"
+                    - Name: Pairs
+                      Type: BaseObjectType
+                      ModellingRule: None
+                      Children:
+                      - Name: Pair
+                        Type: ValueMapPair
+                        ModellingRule: None
+                        Children:
+                        - Name: Key
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ModellingRule: None
+                          Value: false
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ModellingRule: None
+                          Value: {"NamespaceIndex":7,"TextId":"Overwrite"}
+                      - Name: Pair1
+                        Type: ValueMapPair
+                        ModellingRule: None
+                        Children:
+                        - Name: Key
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ModellingRule: None
+                          Value: true
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ModellingRule: None
+                          Value: {"NamespaceIndex":7,"TextId":"OverwriteAllExistingFiles"}
+          - Name: UploadDialogContext
+            Type: OperationDialogContextType
+            Children:
+            - Name: Confirm
+              Type: MethodInvocation
+              Children:
+              - Name: ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"Id":58}
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../FtpFilesystemBrowserLogic@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "UploadItem"
+              - Class: Reference
+                Target: ns=2;i=98
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: localItemPath
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../LocalFilesystemBrowser/FullPath"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                - Name: remoteFolderPath
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../FolderPath"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                - Name: overwriteItemIfExists
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+            - Name: Cancel
+              Type: MethodInvocation
+              Children:
+              - Class: Reference
+                Target: ns=2;i=98
+              - Name: ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: {"Id":58}
+              - Name: Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: ""
+            - Name: Message
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"it-IT","Text":""}
+              Children:
+              - Name: StringFormatter1
+                Type: StringFormatter
+                Children:
+                - Name: Format
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: {"NamespaceIndex":7,"TextId":"UploadItemAlreadyExists"}
+                - Name: ns=2;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: CollegamentoDinamico
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../LocalFilesystemBrowser/DataGrid/SelectedItem/FileName"
+                - Name: ns=2;Source1
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: ConvertitoreChiaveValore1
+                    Type: ValueMapConverter
+                    Children:
+                    - Name: Source
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: CollegamentoDinamico
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../../../LocalFilesystemBrowser/DataGrid/SelectedItem/IsDirectory"
+                    - Name: Pairs
+                      Type: BaseObjectType
+                      ModellingRule: None
+                      Children:
+                      - Name: Pair
+                        Type: ValueMapPair
+                        ModellingRule: None
+                        Children:
+                        - Name: Key
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ModellingRule: None
+                          Value: false
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ModellingRule: None
+                          Value: {"NamespaceIndex":7,"TextId":"Overwrite"}
+                      - Name: Pair1
+                        Type: ValueMapPair
+                        ModellingRule: None
+                        Children:
+                        - Name: Key
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ModellingRule: None
+                          Value: true
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ModellingRule: None
+                          Value: {"NamespaceIndex":7,"TextId":"OverwriteAllExistingFiles"}
+        - Name: ContentAlignment
+          Type: BaseVariableType
+          DataType: ContentHorizontalAlignment
+          ModellingRule: Optional
+          Value: 0
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "!{0} && {1}"
+            - Name: Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../FtpFilesystemBrowser/FtpFilesystemBrowserLogic/FtpClientOperationInProgress"
+            - Name: Source1
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../FtpFilesystemBrowser/FtpFilesystemBrowserLogic/FtpClientIsRunning"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 5.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 5.0
+      - Name: StatusBar
+        Type: Panel
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: IndefiniteProgressCircle1
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=7;%PROJECTDIR%/FtpFilesystemBrowser/ButtonAccentDonut.svg"
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 20.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 20.0
+          - Name: NumberAnimation1
+            Type: NumberAnimation
+            Children:
+            - Name: To
+              Type: BaseDataVariableType
+              DataType: Float
+              Value: 360.0
+            - Name: Target
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":62}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../Rotation@NodeId"
+            - Name: Running
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../Running"
+            - Name: Loops
+              Type: BaseDataVariableType
+              DataType: Int32
+              ModellingRule: Optional
+              Value: -1
+            - Name: Duration
+              Type: BaseDataVariableType
+              DataType: Int32
+              ModellingRule: Optional
+              Value: 2000
+          - Name: Rotation
+            Type: BaseVariableType
+            DataType: Size
+            Value: 0.0
+          - Name: NumberAnimation2
+            Type: NumberAnimation
+            Children:
+            - Name: To
+              Type: BaseDataVariableType
+              DataType: Float
+              Value: 0.0
+            - Name: Target
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":62}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../Rotation@NodeId"
+            - Name: Running
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+              Children:
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "!{0}"
+                - Name: Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../Running"
+            - Name: Duration
+              Type: BaseDataVariableType
+              DataType: Int32
+              ModellingRule: Optional
+              Value: 1
+            - Name: EasingCurve
+              Type: BaseDataVariableType
+              DataType: EasingCurveEnum
+              ModellingRule: Optional
+              Value: 3
+          - Name: Running
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../Filesystems/FtpFilesystemBrowser/FtpFilesystemBrowserLogic/FtpClientOperationInProgress"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 1
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: DynamicColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#000000"
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../Filesystems/FtpFilesystemBrowser/FtpFilesystemBrowserLogic/ETA"
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 5.0
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 5.0
+    - Name: BusyPanel
+      Type: Panel
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 300.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 300.0
+      - Name: BusyMessage
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"NamespaceIndex":7,"TextId":"OperationInProgress"}
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "{0}"
+            - Name: ns=2;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../FtpClientLayout/Filesystems/FtpFilesystemBrowser/FtpFilesystemBrowserLogic/FtpClientOperationInProgress"
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 700
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+  - Name: FtpServerIPAddress
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "127.0.0.1"
+  - Name: FtpServerPort
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 21
+  - Name: Username
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Password
+    Type: BaseDataVariableType
+    DataType: Password
+    SecretValue: uUjwCNrs2HxNwduUA9hUX7yvsfSflqOoB5jD4Q==
+  - Name: ClientCertificateFile
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: ""
+  - Name: ClientPrivateKeyFile
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: ""
+  - Name: UseFTPS
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: ExtensionFilter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "*.*"
+  - Name: ShowHiddenFiles
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: StartLocalFilesystemPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "%PROJECTDIR%\\"
+  - Name: AccessLocalFullFilesystem
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AccessLocalNetworkDrives
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 0
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 0
+- Name: OperationDialog
+  Id: g=a7994682f82a28c67dcff20e111e8a18
+  Supertype: Dialog
+  ReferenceType: HasComponent
+  Children:
+  - Class: Reference
+    Target: ns=3;i=519
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 600.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 160.0
+  - Name: Modal
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: Rectangle1
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: Message
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{OperationContext}/Message"
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 2
+    - Name: Yes
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"NamespaceIndex":7,"TextId":"Yes"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 510.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 121.0
+      - Name: MouseClickEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":16,"Namespace":3}
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":58}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{OperationContext}/Confirm@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Invoke"
+          - Name: MethodContainer2
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":58}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../..@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Close"
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+            Value: ""
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+            Value: ""
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+            Value: 0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 70.0
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+    - Name: No
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"it-IT","Text":"No"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 120.0
+      - Name: MouseClickEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":16,"Namespace":3}
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":58}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{OperationContext}/Cancel@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Invoke"
+          - Name: MethodContainer2
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":58}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../..@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Close"
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+            Value: ""
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+            Value: ""
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+            Value: 0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+  - Name: OperationContext
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"0e2ca34b73ea68a7b12e70b64b1910ab","Namespace":7}

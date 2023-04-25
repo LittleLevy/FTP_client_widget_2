@@ -1,0 +1,33 @@
+Name: Translations
+Type: TranslationsCategoryFolder
+Children:
+- Name: LocalizationDictionary1
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [18,2],
+    "Body": [
+     "","en-US",
+     "Disconnect","Disconnect",
+     "Receive","Receive",
+     "Yes","Yes",
+     "OperationInProgress","Operation in progress...",
+     "LocalFilesystem","Local file system",
+     "Size","Size",
+     "Username","Username",
+     "ApplicationFolder","Application folder",
+     "Port","Port",
+     "ProjectFolder","Project folder",
+     "Send","Send",
+     "RemoteFilesystem","Remote file system",
+     "Filename","File name",
+     "UploadItemAlreadyExists","{0} already exists on remote filesystem. {1}",
+     "Connect","Connect",
+     "Overwrite","Overwrite?",
+     "OverwriteAllExistingFiles","Overwrite all existing files in folder?"
+    ]
+   }
