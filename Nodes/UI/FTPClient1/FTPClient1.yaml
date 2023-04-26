@@ -2764,7 +2764,7 @@ Children:
   - Name: Password
     Type: BaseDataVariableType
     DataType: Password
-    SecretValue: uUjwCNrs2HxNwduUA9hUX7yvsfSflqOoB5jD4Q==
+    SecretValue: FsVHVd/FQS1Y0wllwx7yE+uRpp2iRi+K/JHjlA==
   - Name: ClientCertificateFile
     Type: BaseDataVariableType
     DataType: ResourceUri

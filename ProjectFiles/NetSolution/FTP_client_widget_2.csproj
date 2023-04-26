@@ -15,8 +15,8 @@
   <PropertyGroup>
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
   </PropertyGroup>
-  <Import Project="FTP_client_widget_2.references" />
   <ItemGroup>
-    <PackageReference Include="FluentFTP" Version="46.0.2" />
+    <PackageReference Include="FluentFTP" Version="46.0.2"/>
   </ItemGroup>
+  <Import Project="FTP_client_widget_2.references"/>
 </Project>
